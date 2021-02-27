@@ -18,6 +18,7 @@ jobs:
       with:
         node-version: '14.x'
         registry-url: 'https://registry.npmjs.org'
+    - uses: ilammy/msvc-dev-cmd@v1
     - uses: neomura/setup-aseprite-cli-action@v1.0.1
     - run: npm ci
     - run: npm run-script build
@@ -31,6 +32,7 @@ jobs:
       with:
         node-version: '14.x'
         registry-url: 'https://registry.npmjs.org'
+    - uses: ilammy/msvc-dev-cmd@v1
     - uses: neomura/setup-aseprite-cli-action@v1.0.1
     - run: npm ci
     - run: npm run-script build
